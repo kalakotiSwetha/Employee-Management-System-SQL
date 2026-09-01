@@ -3,85 +3,51 @@ Employee Management System – SQL
 📌 Project Overview
 
 The Employee Management System is a SQL-based database project designed to manage and analyze employee-related information such as departments, salaries, bonuses, qualifications, leaves, and payroll.
-
 The project demonstrates how relational database concepts and SQL queries can be used to answer practical HR and business questions.
 
 🎯 Objectives
 
 Manage employee information in a structured database.
-
 Maintain job department and role details.
-
 Track salary, annual compensation, and bonuses.
-
 Store employee qualifications.
-
 Track employee leave records.
-
 Maintain payroll information.
-
 Analyze workforce, salary, payroll, qualification, and leave patterns.
-
 Generate HR-focused insights such as salary review, promotion, retention, and burnout-risk indicators.
 
 🛠️ Technologies Used
-
 SQL
-
 Relational Database Management System
-
 SQL DDL (CREATE TABLE)
-
 SQL DML (INSERT)
-
 SQL Joins
-
 Aggregate Functions
-
 GROUP BY
-
 ORDER BY
 
 CASE
-
 Window Functions
-
 Foreign Keys and Constraints
 
 🗂️ Database Structure
-
 The database contains the following six tables:
-
 Table
-
 Purpose
-
 JobDepartment
-
 Stores department, job role, description, and salary range
-
 SalaryBonus
-
 Stores salary, annual salary, and bonus information
-
 Employee
-
 Stores employee personal and job information
-
 Qualification
-
 Stores employee qualifications and job requirements
-
 Leaves
-
 Stores employee leave records and reasons
-
 Payroll
-
 Stores payroll transactions and total salary amounts
 
 🔗 Table Relationships
-
 JobDepartment
       │
       ├──────────────> SalaryBonus
@@ -99,7 +65,6 @@ JobDepartment
                           Leaves ───────────┘
 
 Main Relationships
-
 Employee.Job_ID → JobDepartment.Job_ID
 
 SalaryBonus.Job_ID → JobDepartment.Job_ID
